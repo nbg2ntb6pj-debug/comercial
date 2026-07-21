@@ -57,7 +57,7 @@
   </script>
 
   <script>
-    const ICONS = {"chevron-right": "<polyline points="9 18 15 12 9 6"/>", "chevron-down": "<polyline points="6 9 12 15 18 9"/>", "phone": "<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>", "plus": "<line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>", "check": "<polyline points="20 6 9 17 4 12"/>", "x": "<line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>", "search": "<circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>", "send": "<line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>", "map-pin": "<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>", "calendar": "<rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>", "users": "<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>", "package": "<line x1="16.5" y1="9.4" x2="7.5" y2="4.21"/><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/>", "download": "<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>", "trash-2": "<polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><line x1="10" y1="11" x2="10" y2="17"/><line x1="14" y1="11" x2="14" y2="17"/>", "star": "<polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>", "arrow-left": "<line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/>"};
+    const ICONS = {"chevron-right": "<polyline points=\"9 18 15 12 9 6\"/>", "chevron-down": "<polyline points=\"6 9 12 15 18 9\"/>", "phone": "<path d=\"M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z\"/>", "plus": "<line x1=\"12\" y1=\"5\" x2=\"12\" y2=\"19\"/><line x1=\"5\" y1=\"12\" x2=\"19\" y2=\"12\"/>", "check": "<polyline points=\"20 6 9 17 4 12\"/>", "x": "<line x1=\"18\" y1=\"6\" x2=\"6\" y2=\"18\"/><line x1=\"6\" y1=\"6\" x2=\"18\" y2=\"18\"/>", "search": "<circle cx=\"11\" cy=\"11\" r=\"8\"/><line x1=\"21\" y1=\"21\" x2=\"16.65\" y2=\"16.65\"/>", "send": "<line x1=\"22\" y1=\"2\" x2=\"11\" y2=\"13\"/><polygon points=\"22 2 15 22 11 13 2 9 22 2\"/>", "map-pin": "<path d=\"M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z\"/><circle cx=\"12\" cy=\"10\" r=\"3\"/>", "calendar": "<rect x=\"3\" y=\"4\" width=\"18\" height=\"18\" rx=\"2\" ry=\"2\"/><line x1=\"16\" y1=\"2\" x2=\"16\" y2=\"6\"/><line x1=\"8\" y1=\"2\" x2=\"8\" y2=\"6\"/><line x1=\"3\" y1=\"10\" x2=\"21\" y2=\"10\"/>", "users": "<path d=\"M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2\"/><circle cx=\"9\" cy=\"7\" r=\"4\"/><path d=\"M23 21v-2a4 4 0 0 0-3-3.87\"/><path d=\"M16 3.13a4 4 0 0 1 0 7.75\"/>", "package": "<line x1=\"16.5\" y1=\"9.4\" x2=\"7.5\" y2=\"4.21\"/><path d=\"M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z\"/><polyline points=\"3.27 6.96 12 12.01 20.73 6.96\"/><line x1=\"12\" y1=\"22.08\" x2=\"12\" y2=\"12\"/>", "download": "<path d=\"M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4\"/><polyline points=\"7 10 12 15 17 10\"/><line x1=\"12\" y1=\"15\" x2=\"12\" y2=\"3\"/>", "trash-2": "<polyline points=\"3 6 5 6 21 6\"/><path d=\"M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2\"/><line x1=\"10\" y1=\"11\" x2=\"10\" y2=\"17\"/><line x1=\"14\" y1=\"11\" x2=\"14\" y2=\"17\"/>", "star": "<polygon points=\"12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2\"/>", "arrow-left": "<line x1=\"19\" y1=\"12\" x2=\"5\" y2=\"12\"/><polyline points=\"12 19 5 12 12 5\"/>"};
   </script>
 
   <script type="text/babel" data-presets="react">
@@ -73,6 +73,13 @@
         dangerouslySetInnerHTML: { __html: path }
       });
     };
+    const Calendar = (props) => <I name="calendar" {...props} />;
+    const Package = (props) => <I name="package" {...props} />;
+    const Check = (props) => <I name="check" {...props} />;
+    const Users = (props) => <I name="users" {...props} />;
+    const Search = (props) => <I name="search" {...props} />;
+    const Star = (props) => <I name="star" {...props} />;
+    const MapPin = (props) => <I name="map-pin" {...props} />;
 
 
 
@@ -1163,6 +1170,7 @@ function ViewHoy({ ctx }) {
   const [showPasteModal, setShowPasteModal] = React.useState(false);
   const [pasteText, setPasteText] = React.useState("");
   const [pasteResult, setPasteResult] = React.useState(null);
+  const [expandedPedido, setExpandedPedido] = React.useState(null);
 
   // Calcular fecha con offset
   const fechaVista = new Date();
@@ -1423,6 +1431,40 @@ function ViewHoy({ ctx }) {
                       </button>
                       <EstadoBadge estado={estado} />
                     </div>
+                    {estado === "pedido" && (() => {
+                      const pedidosHoy = ctx.orders.filter(o => o.cliente_id === c.id && o.fecha_pedido === today);
+                      const totalLineas = pedidosHoy.reduce((s, o) => s + o.lineas.length, 0);
+                      const abierto = expandedPedido === c.id;
+                      return (
+                        <div className="mt-2">
+                          <button onClick={() => setExpandedPedido(abierto ? null : c.id)} className="text-xs text-stone-500 flex items-center gap-1 hover:text-stone-800">
+                            <I name={abierto ? "chevron-down" : "chevron-right"} size={12} />
+                            {totalLineas > 0 ? `Ver detalle del pedido (${totalLineas} líneas)` : "Ver detalle del pedido"}
+                          </button>
+                          {abierto && (
+                            <div className="mt-2 bg-stone-50 rounded p-3 text-xs space-y-2">
+                              {pedidosHoy.map(o => (
+                                <div key={o.id}>
+                                  {pedidosHoy.length > 1 && <div className="font-semibold text-stone-600 mb-1">{o.marca} · {o.lineas.length} líneas</div>}
+                                  {o.lineas.length === 0 ? (
+                                    <div className="text-stone-400 italic">Sin líneas registradas (marcado desde listado del TPV)</div>
+                                  ) : (
+                                    <div className="space-y-1">
+                                      {o.lineas.map((l, i) => (
+                                        <div key={i} className="flex justify-between mono gap-2">
+                                          <span className="truncate">{l.codigo} · {l.descripcion}</span>
+                                          <span className="shrink-0">{l.cantidad} {l.cantidad > 1 ? "uds" : "ud"} {l.precio ? `· €${l.precio}` : ""}</span>
+                                        </div>
+                                      ))}
+                                    </div>
+                                  )}
+                                </div>
+                              ))}
+                            </div>
+                          )}
+                        </div>
+                      );
+                    })()}
                     <div className="flex flex-wrap gap-2 mt-3">
                       {c.telefono && <button onClick={() => callCliente(c)} className="btn btn-secondary text-xs flex items-center gap-1"><I name="phone" size={12} /> Llamar</button>}
                       {c.telefono && <button onClick={() => sendWhatsapp(c)} className="btn text-xs flex items-center gap-1" style={{background:'#25D366', color:'white'}}>💬 WhatsApp</button>}
@@ -2337,6 +2379,68 @@ function ViewClientes({ ctx }) {
 }
 
 // ============================================
+// HISTORIAL DE PEDIDOS DE UN CLIENTE
+// ============================================
+function ClientePedidoRow({ o, esHoy }) {
+  const [open, setOpen] = React.useState(false);
+  return (
+    <div className="px-3 py-2">
+      <button onClick={() => setOpen(!open)} className="w-full text-left flex items-center justify-between gap-2">
+        <div className="min-w-0 flex-1">
+          <div className="flex items-center gap-2 flex-wrap text-xs">
+            {esHoy && <span className="chip" style={{ background: '#dcfce7', color: '#166534' }}>HOY</span>}
+            <span className="font-semibold">{o.fecha_pedido}</span>
+            <span className="text-stone-400">→ entrega {o.fecha_entrega}</span>
+          </div>
+          <div className="text-xs text-stone-500 mt-0.5">{o.lineas.length} líneas · {o.marca}</div>
+        </div>
+        <I name={open ? "chevron-down" : "chevron-right"} size={14} className="text-stone-400 shrink-0" />
+      </button>
+      {open && (
+        <div className="mt-2 bg-stone-50 rounded p-2 text-xs space-y-1">
+          {o.lineas.length === 0 ? (
+            <div className="text-stone-400 italic">Sin líneas registradas (marcado desde listado del TPV)</div>
+          ) : (
+            o.lineas.map((l, i) => (
+              <div key={i} className="flex justify-between mono gap-2">
+                <span className="truncate">{l.codigo} · {l.descripcion}</span>
+                <span className="shrink-0">{l.cantidad} {l.cantidad > 1 ? "uds" : "ud"} {l.precio ? `· €${l.precio}` : ""}</span>
+              </div>
+            ))
+          )}
+        </div>
+      )}
+    </div>
+  );
+}
+
+function ClientePedidosHistorial({ cliente, ctx }) {
+  const todayYmd = todayYMD();
+  const pedidos = ctx.orders
+    .filter(o => o.cliente_id === cliente.id)
+    .sort((a, b) => (b.fecha_pedido || "").localeCompare(a.fecha_pedido || "") || (b.created_at || "").localeCompare(a.created_at || ""));
+  if (pedidos.length === 0) {
+    return (
+      <div className="bg-stone-50 border border-stone-200 rounded-lg p-3 text-xs text-stone-400 italic">
+        Este cliente aún no tiene pedidos registrados.
+      </div>
+    );
+  }
+  const pedidosHoy = pedidos.filter(o => o.fecha_pedido === todayYmd);
+  return (
+    <div className="border border-stone-200 rounded-lg overflow-hidden">
+      <div className="px-3 py-2 bg-stone-50 border-b border-stone-200 flex items-center justify-between">
+        <div className="font-bold text-xs uppercase tracking-wider">Pedidos ({pedidos.length})</div>
+        {pedidosHoy.length > 0 && <div className="text-xs font-bold text-green-700">Hoy: {pedidosHoy.length}</div>}
+      </div>
+      <div className="divide-y divide-stone-100 max-h-72 overflow-y-auto">
+        {pedidos.map(o => <ClientePedidoRow key={o.id} o={o} esHoy={o.fecha_pedido === todayYmd} />)}
+      </div>
+    </div>
+  );
+}
+
+// ============================================
 // MODAL: editar cliente
 // ============================================
 function ClienteEditModal({ cliente, ctx, onClose }) {
@@ -2464,6 +2568,8 @@ function ClienteEditModal({ cliente, ctx, onClose }) {
             <div className="flex justify-between"><span className="text-stone-500">Día visita (auto):</span> <span className="font-bold">{DIAS_FULL_LABEL[dia_visita] || "—"}</span></div>
             <div className="flex justify-between"><span className="text-stone-500">Días reparto (info):</span> <span className="font-bold">{dias_reparto || "—"}</span></div>
           </div>
+
+          <ClientePedidosHistorial cliente={cliente} ctx={ctx} />
 
           {form.cod_faccsa && (
             <div>
