@@ -97,7 +97,6 @@ const RAW_DATA = {"clientes":[{"id":"26502","cod_faccsa":"26502","nombre":"KOMO-
 // CONFIG Y HELPERS
 // ============================================
 const EMAIL_DESTINO = "Almuquicas@gmail.com";
-const MI_WHATSAPP = "34655834864"; // Tu propio WhatsApp (con prefijo 34)
 const DIAS_LABEL = { L: "Lun", M: "Mar", MI: "Mié", J: "Jue", S: "Sáb" };
 const DIAS_FULL_LABEL = { L: "Lunes", M: "Martes", MI: "Miércoles", J: "Jueves", S: "Sábado" };
 const DIAS_PEDIDO = ["L", "M", "MI", "J", "S"]; // L-J + Sábado
@@ -1788,6 +1787,7 @@ function OrderEditor({ cliente, ctx, onClose }) {
 
   const enviarPedido = () => {
     if (lineas.length === 0) { alert("Añade al menos un producto"); return; }
+    if (!cliente.telefono) { alert("Cliente sin teléfono"); return; }
     const order = {
       id: "o" + Date.now(),
       cliente_id: cliente.id,
@@ -1819,9 +1819,10 @@ function OrderEditor({ cliente, ctx, onClose }) {
     if (navigator.clipboard) {
       navigator.clipboard.writeText(mensaje).catch(()=>{});
     }
-    // Abrir WhatsApp Web/App con el mensaje pre-rellenado a tu propio número
-    window.open(`https://wa.me/${MI_WHATSAPP}?text=${encodeURIComponent(mensaje)}`, '_blank');
-    showToast("📋 Pedido enviado a WhatsApp + copiado");
+    // Abrir WhatsApp Web/App con el mensaje pre-rellenado al cliente
+    const num = waNumber(cliente.telefono);
+    window.open(`https://wa.me/${num}?text=${encodeURIComponent(mensaje)}`, '_blank');
+    showToast("📋 Pedido enviado al cliente por WhatsApp + copiado");
     onClose();
   };
 
